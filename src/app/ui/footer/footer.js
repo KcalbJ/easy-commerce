@@ -13,13 +13,13 @@ function Footer() {
         <Link className="underline underline-offset-4" href="/">
           Home
         </Link>
-        <Link className="underline underline-offset-4" href="#">
+        <Link className="underline underline-offset-4" href="/">
           Contact Us
         </Link>
-        <Link className="underline underline-offset-4" href="#">
+        <Link className="underline underline-offset-4" href="/">
           Terms & Conditions
         </Link>
-        <Link className="underline underline-offset-4" href="#">
+        <Link className="underline underline-offset-4" href="/">
           Privacy Policy
         </Link>
       </nav>

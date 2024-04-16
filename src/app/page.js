@@ -45,9 +45,9 @@ export default function Home() {
         </div>
       </section>
       <section className="flex md:flex-row flex-col gap-4 mb-14 border-t-2 pt-14 ">
-        <ProductCard />
-        <ProductCard/>
-        <ProductCard/>
+        <ProductCard link="/beans" />
+        <ProductCard link="/espresso"/>
+        <ProductCard link="/equipment"/>
       </section>
       <Footer />
     </main>
