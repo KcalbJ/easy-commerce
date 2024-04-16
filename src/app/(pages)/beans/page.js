@@ -1,7 +1,18 @@
+
+import ProductPageHero from "@/app/ui/products/productPageHero";
+import ProductPageSort from "@/app/ui/products/productPageSort";
+
+
 function Page() {
+
+
   return (
-    <main className="h-screen">
-      <h1>beans all beans</h1>
+    <main className="h-screen w-screen">
+      <ProductPageHero image="/beans.jpeg" title="BEANS."/>
+      <div className="max-w-[68.75rem] mx-auto border-t-2 mt-6 flex justify-between flex-row ">
+        <p className="mt-8 ml-9 text-xl">Prodcuts(1)</p>
+         <ProductPageSort/>
+      </div>
     </main>
   );
 }
