@@ -12,7 +12,7 @@ function ProductPageSort() {
       value={sortBy}
     >
       <option value="poppular">Most poppular</option>
-      <option value="newest">What's new</option>
+      <option value="newest">Whats new</option>
       <option value="high">Price hight to low</option>
       <option value="low">Price low to high</option>
     </select>
