@@ -2,6 +2,7 @@ import Link from "next/link";
 import Footer from "./ui/footer/footer";
 import Navbar from "./ui/header/navbar";
 import Image from "next/image";
+import ProductCard from "./ui/products/productCard";
 
 export default function Home() {
   return (
@@ -42,6 +43,11 @@ export default function Home() {
             width="180"
           />
         </div>
+      </section>
+      <section className="flex md:flex-row flex-col gap-4 mb-14 border-t-2 pt-14 ">
+        <ProductCard />
+        <ProductCard/>
+        <ProductCard/>
       </section>
       <Footer />
     </main>
