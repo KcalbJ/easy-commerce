@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 function ProductCard({ product }) {
-  const { title, imageSrc, shortDescription, price, link } = product;
+  const { id, title, imageSrc, shortDescription, price } = product;
+  const productPageUrl = `products/${id}`
 
   return (
     <section className="flex flex-col mb-4md:max-w-md max-w-xs mx-auto">
@@ -18,7 +19,7 @@ function ProductCard({ product }) {
         <p>{shortDescription}</p>
         <div className="flex flex-row justify-between">
           <p>{price}</p>
-          <Link href={link} className="text-right">
+          <Link href={productPageUrl} className="text-right">
             View
           </Link>
         </div>
