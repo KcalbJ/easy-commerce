@@ -1,29 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
-function ProductCard({link}) {
-  return (
-    <>
-      <div className="flex flex-col justify-around mx-auto items-center  shadow-[5px_5px_0px_0px_rgba(156,111,68)] mb-4 border-black border-2 px-6 py-4 gap-4">
-        <div className=" gap-1">
-          <h2>Title</h2>
-          <p>Short Desc</p>
-        </div>
-        <Link href={link} className="ml-auto  md:ml-auto text-right">
-          View
-        </Link>
+function ProductCard({ product }) {
+  const { title, imageSrc, shortDescription, price, link } = product;
 
-        <div className=" items-center p-4">
-          <Image
-            alt="Product Image"
-            className="aspect-square object-cover rounded-lg border"
-            height={200}
-            src="/beans.jpeg"
-            width={200}
-          />
+  return (
+    <section className="flex flex-col mb-4md:max-w-md max-w-xs mx-auto">
+      <Image
+        alt="Product Image"
+        className="aspect-square object-cover border"
+        height={480}
+        src={imageSrc}
+        width={450}
+      />
+
+      <div className="gap-1 text-left ml-2">
+        <h2>{title}</h2>
+        <p>{shortDescription}</p>
+        <div className="flex flex-row justify-between">
+          <p>{price}</p>
+          <Link href={link} className="text-right">
+            View
+          </Link>
         </div>
       </div>
-    </>
+    </section>
   );
 }
+
 
 export default ProductCard;

@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           <Image
             alt="Hero"
-            className="aspect-video overflow-hidden rounded-lg object-cover object-center hidden md:block "
+            className="aspect-video overflow-hidden  object-cover object-center hidden md:block "
             height="500"
             src="/coffee-main.jpg"
             width="500"
@@ -44,10 +44,11 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="flex md:flex-row flex-col gap-4 mb-14 border-t-2 pt-14 ">
-        <ProductCard link="/beans" />
-        <ProductCard link="/espresso"/>
-        <ProductCard link="/equipment"/>
+      <section className="border-t-2 pt-14" >
+      <h2 className="text-center md:text-2xl font-bold mb-10">Check out some best sellers</h2>
+        <div className="flex md:flex-row flex-col mb-14  gap-8 justify-center ">
+        
+        </div>
       </section>
       <Footer />
     </main>

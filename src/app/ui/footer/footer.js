@@ -1,7 +1,7 @@
 import Link from "next/link"
 function Footer() {
   return (
-    <footer className="border-t">
+    <footer className="border-t w-screen">
     <div className="container grid items-start gap-4 px-4 py-4 text-sm md:grid-cols-2 md:justify-between md:py-6 lg:gap-10 lg:px-6">
       <div className="text-center md:text-left">
         <Link className="font-bold" href="#">
