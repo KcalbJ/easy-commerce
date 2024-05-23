@@ -9,7 +9,7 @@ function Page() {
 
   return (
     <main className="h-full w-screen">
-      <ProductPageHero image="/beans.jpeg" title="BEANS."/>
+      <ProductPageHero image="/espressoo.jpeg" title="ESPRESSO."/>
       <div className="max-w-[68.75rem] mx-auto border-t-2 mt-6 flex justify-between flex-row ">
         <p className="mt-8 ml-9 text-xl">Prodcuts({espressoProducts.length})</p>
          <ProductPageSort/>
